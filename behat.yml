@@ -1,0 +1,10 @@
+default:
+    extensions:
+        Behat\MinkExtension\Extension:
+            base_url: http://grumpy-phpunit.com
+            default_session: goutte 
+            javascript_session: selenium2 
+            goutte: ~
+            selenium2:
+                browser: phantomjs
+                wd_host: "http://localhost:8643/wd/hub"
