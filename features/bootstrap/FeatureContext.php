@@ -53,7 +53,7 @@ class FeatureContext extends MinkContext
      */
     public function iShouldGetBack($arg1)
     {
-        return $this->response == $arg1;
+        assertEquals($this->response, $arg1);
     }
 
     /**
